@@ -10,6 +10,7 @@ let contador = 1;
 // ELEMENTOS HTML
 // ======================================
 
+const btn3 = document.getElementById("btn3");
 const nombre = document.getElementById("nombre");
 const email = document.getElementById("email");
 const instagram = document.getElementById("instagram");
@@ -141,6 +142,10 @@ document.getElementById("btn3").onclick = async () => {
 
     }
 
+    btn3.disabled = true;
+
+    btn3.textContent = "PREPARANDO TU WELCOME PACK...";
+
     await enviarDatos();
 
     mostrarPantalla(4);
@@ -156,5 +161,9 @@ document.getElementById("btn4").onclick = () => {
     limpiarFormulario();
 
     mostrarPantalla(1);
+
+    btn3.disabled = false;
+
+    btn3.textContent = "CONTINUAR";
 
 };
