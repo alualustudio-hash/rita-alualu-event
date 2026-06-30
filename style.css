@@ -1,0 +1,450 @@
+/* =======================================
+   ALÚ ALÚ x RITA MILLER
+   DESIGN SYSTEM
+======================================= */
+
+:root{
+
+    /* Colores */
+
+    --black:#111111;
+    --text:#2D2D2D;
+    --background:#FAFAF8;
+    --line:#D9D9D9;
+
+    /* Tipografías */
+
+    --title-font:Georgia, "Times New Roman", serif;
+    --body-font:Arial, Helvetica, sans-serif;
+
+}
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    background:var(--background);
+    color:var(--text);
+    font-family:var(--body-font);
+
+    overflow:hidden;
+
+}
+
+/* ==========================
+   PANTALLAS
+========================== */
+
+.pantalla{
+
+    display:none;
+
+    width:100%;
+    max-width:768px;
+    min-height:100vh;
+
+    margin:auto;
+
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding:70px 60px;
+
+}
+
+.pantalla.activa{
+
+    display:flex;
+
+}
+
+/* ==========================
+   CABECERA
+========================== */
+
+.logos{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+
+}
+
+.marca{
+
+    color:var(--black);
+
+}
+
+.rita,
+.alu{
+
+    font-family:var(--title-font);
+    font-size:56px;
+    line-height:.9;
+
+}
+
+.cross{
+
+    font-size:24px;
+    color:#999;
+
+}
+
+/* ==========================
+   TEXTOS
+========================== */
+
+h1{
+
+    margin-top:90px;
+
+    font-family:var(--title-font);
+
+    font-size:55px;
+
+    letter-spacing:3px;
+
+    line-height:.95;
+
+    font-weight:400;
+
+    text-align:center;
+
+    color:var(--black);
+
+}
+
+.descripcion{
+
+    max-width:520px;
+
+    margin-top:40px;
+
+    font-size:20px;
+
+    line-height:1.6;
+
+    letter-spacing:1px;
+
+    text-align:center;
+
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+button{
+
+    margin-top:80px;
+
+    width:260px;
+
+    height:64px;
+
+    border:1px solid var(--black);
+
+    background:white;
+
+    font-family:var(--body-font);
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:
+        background .30s ease,
+        color .30s ease,
+        transform .25s ease,
+        box-shadow .30s ease;
+
+}
+
+button:hover{
+
+    background:var(--black);
+
+    color:white;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+button:disabled{
+
+    background:#EFEFEF;
+
+    color:#888;
+
+    border-color:#DDDDDD;
+
+    cursor:default;
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================
+   QR
+========================== */
+
+.qr img{
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease;
+
+}
+
+.qr img:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.qrs{
+
+    display:flex;
+
+    gap:70px;
+
+    margin-top:60px;
+
+}
+
+.qr{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.qr img{
+
+    width:190px;
+
+    padding:12px;
+
+    border:1px solid var(--line);
+
+    background:white;
+
+}
+
+.qr p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+/* ==========================
+   FORMULARIO
+========================== */
+
+.formulario{
+
+    width:100%;
+
+    max-width:520px;
+
+    margin-top:55px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"]{
+
+    width:100%;
+
+    padding:12px 0;
+
+    border:none;
+
+    border-bottom:1px solid #BDBDBD;
+
+    background:transparent;
+
+    font-size:18px;
+
+    font-family:var(--body-font);
+
+    color:var(--black);
+
+    outline:none;
+
+}
+
+.formulario input{
+
+    transition:border-color .25s ease;
+
+}
+
+.formulario input:focus{
+
+    border-bottom:1px solid var(--black);
+
+}
+
+.formulario input::placeholder{
+
+    color:#999;
+
+    letter-spacing:1px;
+
+}
+
+.check{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    margin-top:10px;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+}
+
+.error{
+
+    height:24px;
+
+    margin-top:30px;
+
+    color:#9A2C2C;
+
+    font-size:15px;
+
+    font-family:var(--body-font);
+
+    text-align:center;
+
+}
+
+/* ==========================
+   PANTALLA FINAL
+========================== */
+
+.numero{
+
+    margin-top:45px;
+
+    font-family:var(--title-font);
+
+    font-size:110px;
+
+    letter-spacing:4px;
+
+    color:var(--black);
+
+    animation:aparecerNumero .5s ease;
+
+}
+
+.mensaje{
+
+    margin-top:35px;
+
+    font-size:22px;
+
+    text-align:center;
+
+    color:#555;
+
+}
+
+@keyframes aparecerNumero{
+
+    0%{
+
+        opacity:0;
+
+        transform:scale(.75);
+
+    }
+
+    70%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+h1{
+
+    animation:aparecerTitulo .6s ease;
+
+}
+
+@keyframes aparecerTitulo{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
