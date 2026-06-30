@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ALÚ ALÚ Event</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="pantalla1" class="container pantalla activa">
+
+        <div class="logos">
+
+            <div class="marca rita">
+                RITA MILLER
+            </div>
+
+            <div class="cross">×</div>
+
+            <div class="marca alu">
+                ALÚ ALÚ
+            </div>
+
+        </div>
+
+        <h1>
+            PARTICIPA<br>
+            EN EL SORTEO
+        </h1>
+
+        <p class="descripcion">
+            GANA UN VESTIDO EXCLUSIVO RITA MILLER<br>
+            Y UN BOLSO ALÚ ALÚ
+        </p>
+
+    <button id="btn1">PARTICIPAR</button>
+
+    </div>
+
+    <div id="pantalla2" class="container pantalla">
+
+        <h1>
+            Síguenos<br>
+            en Instagram
+        </h1>
+
+        <p class="descripcion">
+
+            Escanea los códigos QR y sigue a ambas cuentas para participar en el sorteo.
+
+        </p>
+
+        <div class="qrs">
+
+            <div class="qr">
+
+                <img src="assets/qr-rita.png">
+
+                <p>@ritamilleratelier</p>
+
+            </div>
+
+            <div class="qr">
+
+                <img src="assets/qr-alualu.png">
+
+                <p>@alualu.studio</p>
+
+            </div>
+
+        </div>
+
+        <button id="btn2">
+            CONTINUAR
+        </button>
+
+    </div>
+
+
+
+<div id="pantalla3" class="container pantalla">
+
+    <h1>
+        Completa<br>
+        tus datos
+    </h1>
+
+    <p class="descripcion">
+        Introduce tus datos para participar en el sorteo.
+    </p>
+
+    <form class="formulario">
+
+        <input
+            id="nombre"
+            type="text"
+            placeholder="Nombre"
+        >
+
+        <input
+            id="email"
+            type="email"
+            placeholder="Correo electrónico"
+        >
+
+        <input
+            id="instagram"
+            type="text"
+            placeholder="Usuario de Instagram"
+        >
+
+        <label class="check">
+
+            <input 
+                id="consentimiento"
+                type="checkbox"
+            >
+
+            Doy mi consentimiento para recibir 
+            información sobre eventos organizados por 
+            Rita Miller y Alú Alú.
+
+        </label>
+
+    </form>
+
+    <p id="error" class="error"></p>
+
+    <button id="btn3">
+        CONTINUAR
+    </button>
+
+</div>
+
+
+
+<div id="pantalla4" class="container pantalla">
+
+    <div class="logos">
+
+        <div class="marca rita">
+            RITA MILLER
+        </div>
+
+        <div class="cross">×</div>
+
+        <div class="marca alu">
+            ALÚ ALÚ
+        </div>
+
+    </div>
+
+    <h1>
+        ¡Gracias por<br>
+        participar!
+    </h1>
+
+    <p class="descripcion">
+        Tu número para el sorteo es
+    </p>
+
+    <div id="numero" class="numero">
+        048
+    </div>
+
+    <p class="mensaje">
+
+        Ya puedes recoger tu welcome pack.
+
+    </p>
+
+    <button id="btn4">
+
+        FINALIZAR
+
+    </button>
+
+</div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
